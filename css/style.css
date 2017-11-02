@@ -71,3 +71,69 @@ header .brand {
         align-items: center;
     }
 }
+
+/*-----HERO SECTION-----*/
+#hero-section{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+
+#hero-section .img-container {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+#hero-section img {
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.hero-text h4 {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.hero-text .btn {
+    background-color: black;
+    color: white;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    #hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #hero-section .img-container {
+        margin: 0 0;
+        width: 100%;
+    }
+    
+    .hero-text {
+        width: 95%;
+        margin: 32px;
+    }
+    
+    .hero-text h1{
+        font-size: 1.8rem;
+    }
+    
+    .hero-text h4 {
+        font-size: 1.2rem;
+    }
+}
