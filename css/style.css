@@ -1,0 +1,73 @@
+html {
+    font-size: 18px;
+    font-family: Nunito, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Roboto, sans-serif;
+}
+
+/*-----HEADER-----*/
+header {
+    display: flex;
+    height: 64px;
+    align-items: center;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    height: 32px;
+    flex: 1;
+}
+
+.brand h5 {
+    text-transform: uppercase;
+    color: grey;
+}
+.brand span {
+    font-weight: 900;
+    color: black;
+}
+
+.nav-standard ul {
+    display: flex;
+    margin-right:  24px;
+}
+
+.nav-standard ul li a {
+    color: grey;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px){
+    header .brand {
+        display: none;
+    }
+    
+    .nav-standard {
+        display: none;
+    }
+    
+    .nav-mobile {
+        display: flex;
+        width: 100%;
+    }
+    
+    .nav-mobile ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
