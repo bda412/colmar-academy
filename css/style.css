@@ -72,6 +72,7 @@ header .brand {
     }
 }
 
+
 /*-----HERO SECTION-----*/
 #hero-section{
     display: flex;
@@ -92,7 +93,7 @@ header .brand {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 35%;
 }
 
 .hero-text h1 {
@@ -136,4 +137,77 @@ header .brand {
     .hero-text h4 {
         font-size: 1.2rem;
     }
+}
+
+/*-----INFO ARTICLES SECTION-----*/
+#info-section {
+    display: flex;
+    flex-direction: row;
+    margin: 32px auto;
+}
+
+.large-article {
+    width: 60%;
+    margin: 0 24px;
+}
+
+.large-article img {
+    width: 100%;
+}
+
+.article-stack {
+    width: 35%;
+}
+
+.mobile {
+    display: none;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.article:last-child {
+    background-color: lightgrey;
+    border-bottom: none;
+}
+
+.article img{
+    width: 35%;
+    height:auto;
+    margin: 16px;
+}
+
+.article-text {
+    width: 65%;
+}
+
+.large-article h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.large-article .author {
+    margin-top: 20px;
+    font-size: .8rem;
+}
+
+.article-text h5 {
+    font-weight: bold;
+    color: gray;
+}
+
+.article p {
+    color: grey;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+.article-text .read {
+    color: dodgerblue;
 }
