@@ -200,14 +200,57 @@ header .brand {
 .article-text h5 {
     font-weight: bold;
     color: gray;
+    font-size: 1.2rem;
 }
 
 .article p {
     color: grey;
-    line-height: 1.1;
+    line-height: 1.2;
     margin: 10px 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
 .article-text .read {
     color: dodgerblue;
+}
+
+@media only screen and (max-width: 650px) {
+    #info-section {
+        margin-top: 0px;
+    }
+    
+    .large-article {
+        display: none;
+    }
+    
+    .article-stack {
+        width: 100%;
+    }
+    
+    #info-section .article {
+        border: none;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    #info-section .article img {
+        display: none;
+        
+    }
+    
+    #info-section .article .mobile {
+        display: flex;
+        width: 95%;
+        height: auto;
+    }
+    
+    #info-section .article-text {
+        width: 90%;
+        padding: 16px;
+    }
+    
+    .article:last-child {
+        background-color: white;
+    }
 }
