@@ -254,3 +254,89 @@ header .brand {
         background-color: white;
     }
 }
+
+
+/*-----COURSE SECTION-----*/
+#course-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#course-section h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 32px;
+}
+
+.courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 72px 32px 72px;
+}
+
+.course-card {
+    width: 30%;
+    margin: 32px 16px;
+    background-color: white;
+    margin-top: 0px;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card h5 {
+    font-weight: bold;
+    margin: 16px;
+}
+
+.course-card p {
+    margin: 16px;
+    color: grey;
+}
+
+.course-card p:last-child {
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 650px) {
+    #course-section {
+        background-color: white;
+        border-top: 1px solid lightgrey;
+    }
+    
+    #course-section h2 {
+        margin-bottom: 16px;
+    }
+    
+    .courses {
+        flex-flow: column;
+        width: 90%;
+        margin: 0 0 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .course-card {
+        width: 100%;
+        background-color: lightgray;
+        margin: 8px;
+    }
+    
+    .course-card:last-child {
+        margin-bottom: 32px;
+    }
+    
+    .course-card img {
+        display: none;
+    }
+    
+    .course-card p {
+        display: none;
+    }
+}
