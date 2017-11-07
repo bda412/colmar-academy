@@ -8,8 +8,13 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 /*-----HEADER-----*/
 header {
@@ -28,11 +33,19 @@ header .brand {
 
 .brand h5 {
     text-transform: uppercase;
-    color: grey;
+    color: #818386;
 }
 .brand span {
-    font-weight: 900;
-    color: black;
+    font-weight: bolder;
+    color: #234975;
+}
+
+.brand a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 
 .nav-standard ul {
@@ -41,10 +54,23 @@ header .brand {
 }
 
 .nav-standard ul li a {
-    color: grey;
+    color: #818386;
     text-decoration: none;
     margin-left: 16px;
 }
+
+.nav-standard .sign-in a{
+    color: #eeeeee;
+    background-color: #9b9b9b;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-standard ul li a:hover {
+    color: #234975;
+    font-weight: bold;
+}
+
 
 .nav-mobile {
     display: none;
@@ -77,7 +103,7 @@ header .brand {
 #hero-section{
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
+    background-color: #d8d8d8;
 }
 
 #hero-section .img-container {
@@ -107,11 +133,19 @@ header .brand {
 }
 
 .hero-text .btn {
-    background-color: black;
+    background-color: #234975;
     color: white;
-    padding: 8px 0;
+    padding: 20px 0;
     width: 100%;
+    justify-content: center;
     text-align: center;
+    border-radius: 15px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+
+.hero-text .btn:hover {
+    background-color: #4f93e2;
 }
 
 @media only screen and (max-width: 650px) {
@@ -166,13 +200,13 @@ header .brand {
 .article {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid grey;
 }
 
 .article:last-child {
-    background-color: lightgrey;
+    background-color: #eaebec;
     border-bottom: none;
 }
 
@@ -199,19 +233,19 @@ header .brand {
 
 .article-text h5 {
     font-weight: bold;
-    color: gray;
+    color: #234975;
     font-size: 1.2rem;
 }
 
 .article p {
-    color: grey;
+    color: #4a4a4a;
     line-height: 1.2;
     margin: 10px 0;
     margin-bottom: 0;
     font-size: 1.1rem;
 }
 
-.article-text .read {
+.article-text .read a:hover {
     color: dodgerblue;
 }
 
@@ -262,10 +296,11 @@ header .brand {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+    background-color: #eaebec;
 }
 
 #course-section h2 {
+    text-align: center;
     font-weight: bold;
     font-size: 2rem;
     margin: 32px;
@@ -283,6 +318,11 @@ header .brand {
     margin: 32px 16px;
     background-color: white;
     margin-top: 0px;
+    transition: background-color 250ms ease-in 0.15s;
+}
+
+.course-card:hover {
+    background-color: #d4dbf0;
 }
 
 .course-card img {
@@ -293,12 +333,15 @@ header .brand {
 .course-card h5 {
     font-weight: bold;
     margin: 16px;
+    color:#234975;
 }
 
 .course-card p {
     margin: 16px;
     color: grey;
 }
+
+
 
 .course-card p:last-child {
     margin-bottom: 24px;
@@ -307,11 +350,21 @@ header .brand {
 @media only screen and (max-width: 650px) {
     #course-section {
         background-color: white;
-        border-top: 1px solid lightgrey;
+        border-top: 1px solid #eaebec;
+        justify-content: center;
+        align-items: center;
     }
     
     #course-section h2 {
         margin-bottom: 16px;
+    }
+    
+    .course-section-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     
     .courses {
@@ -324,7 +377,7 @@ header .brand {
     
     .course-card {
         width: 100%;
-        background-color: lightgray;
+        background-color: #d8d8d8;
         margin: 8px;
     }
     
@@ -355,6 +408,7 @@ header .brand {
     font-weight: bold;
     font-size: 2rem;
     margin: 32px;
+    text-align: center;
 }
 
 .thesis-articles {
@@ -367,10 +421,11 @@ video {
 
 #thesis-section .large-article h2 {
     margin: 24px 0 8px 0;
+    text-align: left;
 }
 
 #thesis-section .article:first-child {
-    background-color: lightgray;
+    background-color: #eaebec;
     border-bottom: none;
 }
 
